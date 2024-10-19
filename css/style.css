@@ -6972,3 +6972,9 @@ textarea {
 .bootstrap-select>.dropdown-toggle:after {
     margin-left: 0 !important;
 }
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

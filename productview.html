@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue Produit - Marketplace Agricole - K.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">K.com</div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="produit.html"><i class="fas fa-seedling"></i> Produits <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Céréales</a></li>
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Légumes</a></li>
+                            <li><a href="#">Produits Transformés</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="boutique.html"><i class="fas fa-store"></i> Boutiques <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Boutique de Céréales</a></li>
+                            <li><a href="#">Fruits du Faso</a></li>
+                            <li><a href="#">Légumes Bio Faso</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> Catégories <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bio</a></li>
+                            <li><a href="#">Local</a></li>
+                            <li><a href="#">Importé</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-buttons btn"><i class="fas fa-user"></i> Mon Compte</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="produit.html">Produits</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Vue Produit</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product View -->
+    <section class="product-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-images">
+                        <img src="images/product/big-1.jpg" alt="Produit" class="main-image">
+                        <div class="thumbnail-images">
+                            <img src="images/product/big-1.jpg" alt="Produit">
+                            <img src="images/product/big-2.jpg" alt="Produit">
+                            <img src="images/product/big-3.jpg" alt="Produit">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-details">
+                        <h2>Mil Burkinabé</h2>
+                        <p class="price">€12.00</p>
+                        <p class="description">Céréale essentielle cultivée localement, riche en nutriments et parfaite pour une alimentation saine.</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantité :</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        </div>
+                        <button class="btn"><i class="fas fa-shopping-cart"></i> Ajouter au Panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Like This -->
+    <section class="more-like-this">
+        <div class="container">
+            <h2>Plus de produits similaires</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/product/big-2.jpg" alt="Produit">
+                    <h3>Sorgho Bio</h3>
+                    <p class="price">€15.00</p>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i> Voir le produit</a>
+                </div>
+                <div class="product-item">
+                    <img src="images/product/big-3.jpg" alt="Produit">
+                    <h3>Arachides Grillées</h3>
+                    <p class="price">€8.00</p>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i> Voir le produit</a>
+                </div>
+                <div class="product-item">
+                    <img src="images/product/big-1.jpg" alt="Produit">
+                    <h3>Mil Burkinabé</h3>
+                    <p class="price">€12.00</p>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i> Voir le produit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 K.com. Tous droits réservés. Produit au Burkina Faso.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Marketplace Agricole - K.com</title>
+    <title>Produits - Marketplace Agricole - K.com</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/newstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -16,7 +16,7 @@
             <div class="logo">K.com</div>
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
                     <li class="dropdown">
                         <a href="produit.html"><i class="fas fa-seedling"></i> Produits <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
@@ -49,111 +49,65 @@
         </div>
     </header>
 
-    <section class="banner">
+    <!-- Barre de recherche -->
+    <section class="search-bar">
         <div class="container">
-            <img src="images/blog/img-1.jpg" alt="Bannière produits agricoles Burkina Faso" class="banner-image">
-            <div class="banner-content">
-                <h1>Découvrez les meilleurs produits agricoles du Burkina Faso</h1>
-                <p>Des produits locaux, frais, et naturels à portée de clic</p>
-                <a href="#" class="btn">Explorer les Produits</a>
+            <input type="text" placeholder="Rechercher des produits..." class="search-input">
+            <button class="btn search-btn"><i class="fas fa-search"></i> Rechercher</button>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-group">
+                <label for="availability">Disponibilité :</label>
+                <select id="availability">
+                    <option value="all">Tous</option>
+                    <option value="available">Disponible</option>
+                    <option value="unavailable">Indisponible</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="category">Catégorie :</label>
+                <select id="category">
+                    <option value="all">Toutes</option>
+                    <option value="cereals">Céréales</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Légumes</option>
+                    <option value="processed">Produits Transformés</option>
+                </select>
             </div>
         </div>
     </section>
-    
-    <!-- Section des Produits -->
+
+    <!-- Produits -->
     <section class="products">
         <div class="container">
-            <h2>Nos Produits Vedettes</h2>
+            <h2>Nos Produits</h2>
             <div class="product-grid">
                 <div class="product-item">
                     <img src="images/product/big-1.jpg" alt="Mil">
                     <h3>Mil Burkinabé</h3>
                     <p>Céréale essentielle cultivée localement</p>
                     <p class="price">€12.00</p>
-                    <a href="#" class="btn">Ajouter au Panier</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i> Voir le produit</a>
                 </div>
                 <div class="product-item">
                     <img src="images/product/big-2.jpg" alt="Sorgho">
                     <h3>Sorgho Bio</h3>
                     <p>Sorgho de qualité supérieure, issu des meilleurs champs</p>
                     <p class="price">€15.00</p>
-                    <a href="#" class="btn">Ajouter au Panier</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i> Voir le produit</a>
                 </div>
                 <div class="product-item">
                     <img src="images/product/big-3.jpg" alt="Arachide">
                     <h3>Arachides Grillées</h3>
                     <p>Riche en nutriments, directement des producteurs locaux</p>
                     <p class="price">€8.00</p>
-                    <a href="#" class="btn">Ajouter au Panier</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i> Voir le produit</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Boutiques Marketplace -->
-    <section class="stores">
-        <div class="container">
-            <h2>Nos Boutiques Partenaires</h2>
-            <div class="stores-grid">
-                <div class="store-item">
-                    <img src="images/team/img-1.jpg" alt="Boutique de céréales">
-                    <h3>Boutique de Céréales</h3>
-                    <p>Spécialisée dans la vente de céréales locales</p>
-                    <p>Découvrez une large gamme de céréales cultivées localement, parfaites pour une alimentation saine et équilibrée.</p>
-                    <a href="#" class="btn">Visiter la Boutique</a>
-                    <a href="#" class="btn btn-secondary">Voir les Produits</a>
-                </div>
-                <div class="store-item">
-                    <img src="images/team/img-2.jpg" alt="Boutique de fruits">
-                    <h3>Fruits du Faso</h3>
-                    <p>Des fruits frais, directement des vergers du Burkina</p>
-                    <p>Profitez de fruits frais et juteux, cueillis à la main et livrés directement chez vous.</p>
-                    <a href="#" class="btn">Visiter la Boutique</a>
-                    <a href="#" class="btn btn-secondary">Voir les Produits</a>
-                </div>
-                <div class="store-item">
-                    <img src="images/team/img-3.jpg" alt="Boutique de légumes">
-                    <h3>Légumes Bio Faso</h3>
-                    <p>Légumes bio et sains, issus de l'agriculture responsable</p>
-                    <p>Nos légumes bio sont cultivés sans pesticides, pour une alimentation saine et respectueuse de l'environnement.</p>
-                    <a href="#" class="btn">Visiter la Boutique</a>
-                    <a href="#" class="btn btn-secondary">Voir les Produits</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services">
-        <div class="container">
-            <h2>Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Livraison</h3>
-                    <p>Livraison à travers tout le Monde en moins de 48 heures</p>
-                </div>
-                <div class="service-item">
-                    <h3>Produits 100% Locaux</h3>
-                    <p>Garantis cultivés et produits au Burkina Faso</p>
-                </div>
-                <div class="service-item">
-                    <h3>Support 24/7</h3>
-                    <p>Un service client à votre disposition à tout moment</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contactez-nous</h2>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Votre Nom" required>
-                <input type="email" name="email" placeholder="Votre Email" required>
-                <textarea name="message" rows="5" placeholder="Votre Message" required></textarea>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
         </div>
     </section>
 
