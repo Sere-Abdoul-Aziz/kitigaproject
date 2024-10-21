@@ -29,9 +29,15 @@ body {
     align-items: center;
 }
 
+.logo-container {
+    background-color: #fff; /* Arrière-plan blanc pour le logo */
+    padding: 10px; /* Ajoute un peu de padding autour du logo */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
 .logo {
     height: 50px;
-    width: 100px;
+    width: auto;
 }
 
 .navbar .nav-menu {
